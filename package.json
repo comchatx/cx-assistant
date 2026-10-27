@@ -1,0 +1,48 @@
+{
+  "name": "@comchatx/cx-assistant",
+  "version": "0.1.2",
+  "description": "Sets up cx as your assistant.",
+  "license": "MIT",
+  "author": "ComChatX",
+  "homepage": "https://github.com/comchatx/cx-assistant#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comchatx/cx-assistant.git"
+  },
+  "bugs": "https://github.com/comchatx/cx-assistant/issues",
+  "keywords": [
+    "pi-package"
+  ],
+  "pi": {
+    "extensions": [
+      "./dist/extensions"
+    ]
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "prepack": "npm run build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "comchatx": {
+    "about": "将 cx 设置为你的助手。",
+    "mark": {
+      "line": "document"
+    },
+    "section": "extensions",
+    "order": 90
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "1.4.0",
+    "@types/node": "26.2.0",
+    "esbuild": "0.27.2",
+    "typescript": "7.0.2",
+    "vitest": "4.1.11"
+  }
+}
