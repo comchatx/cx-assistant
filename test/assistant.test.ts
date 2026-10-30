@@ -7,6 +7,7 @@ const SECTION = "assistant";
 const SENTENCES = [
   "You are cx, a seller's assistant on ComChatX.",
   "You work out what to do and do it with the tools and skills you have, and give your reasons when the seller asks for them.",
+  "When you propose something, give one line of reason and its source; give the whole analysis only when the seller asks, name a file by its title and never by its path, and never paste a report into the conversation.",
   "What you can offer a seller is what those tools and skills let you do.",
 ];
 const ASSISTANT = SENTENCES.join(" ");
@@ -20,7 +21,7 @@ it("the extension registers one handler, which sets the section on pi's options 
   expect(event.systemPromptOptions.sections).toEqual({ other: "kept", [SECTION]: ASSISTANT });
 });
 
-it("the section is the three sentences of who cx is, naming no tool, source, command or marketplace", () => {
+it("the section is the four sentences of who cx is, naming no tool, source, command or marketplace", () => {
   expect(SHIPPED.split(/(?<=\.) /)).toEqual(SENTENCES);
   expect(SHIPPED_SECTION).toBe(SECTION);
   const words = ASSISTANT.toLowerCase().match(/[a-z0-9-]+/g)!;

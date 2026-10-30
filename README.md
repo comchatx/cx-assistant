@@ -40,8 +40,8 @@ npm test               # builds dist/ and loads it with the pinned pi
 
 The source is `src/extensions/`; `npm run build` bundles each file there into `dist/extensions/`, the directory the package's `pi` manifest names, leaving pi's own packages for pi to supply. Tests live under `test/`: pi loads every module in an extensions directory, so the build refuses anything there that is not an extension.
 
-- `test/package.test.ts`: the pinned pi loads the built extension, one `before_agent_start` handler, and its section is the three sentences; nothing is forced.
-- `test/assistant.test.ts`: the handler sets the section and returns nothing, leaving another section in place; the section is the three sentences exactly and names none of pi's tools, no data source, no `cx` command, no `pi install`, no path and not "amazon".
+- `test/package.test.ts`: the pinned pi loads the built extension, one `before_agent_start` handler, and its section is the four sentences; nothing is forced.
+- `test/assistant.test.ts`: the handler sets the section and returns nothing, leaving another section in place; the section is the four sentences exactly and names none of pi's tools, no data source, no `cx` command, no `pi install`, no path and not "amazon".
 
 ## Release
 
