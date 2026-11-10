@@ -1,7 +1,7 @@
 {
   "name": "@comchatx/cx-assistant",
-  "version": "0.1.4",
-  "description": "Sets up cx as your assistant.",
+  "version": "0.1.5",
+  "description": "Does the work with your plugins, giving reasons and sources.",
   "license": "MIT",
   "author": "ComChatX",
   "homepage": "https://github.com/comchatx/cx-assistant#readme",
@@ -29,7 +29,7 @@
     "test": "vitest run"
   },
   "comchatx": {
-    "about": "将 cx 设置为你的助手。",
+    "about": "用你装的插件把事做完，提建议时附上理由和出处。",
     "mark": {
       "line": "document"
     },

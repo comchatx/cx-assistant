@@ -46,3 +46,10 @@ The source is `src/extensions/`; `npm run build` bundles each file there into `d
 ## Release
 
 A `v<version>` tag publishes the package from `.github/workflows/release.yml` by npm's trusted publishing; the tag must name the version in `package.json`.
+
+## What we expect of a plugin
+
+- Nothing in it is changed for ComChatX.
+- It does one job.
+- It names the plugins it uses.
+- Every plugin can be part of another.
