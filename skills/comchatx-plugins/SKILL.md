@@ -10,8 +10,8 @@ curl -s https://registry.npmjs.org/-/org/comchatx/package
 ```
 
 - A name that begins `cx-`, bare or as `@comchatx/cx-…`, is a plugin. Every other name is a model provider, and `@comchatx/providers` is their shared core.
-- What a plugin says it does is in its record at `https://registry.npmjs.org/<name>/latest`, a scoped name's `/` written `%2f`: `description` in English, `comchatx.about` in Chinese. The plugins it needs are in its `dependencies`, and npm installs them with it.
-- A plugin whose record carries `comchatx.source` is a data source. It is connected in its Settings on the Plugins page: Amazon's take the seller's own Amazon authorisation there, and one that bills the balance may also take the seller's own key. Nothing in this shell connects one.
+- What a plugin says it does is in its record at `https://registry.npmjs.org/<name>/latest`, a scoped name's `/` written `%2f`: `description` in English, `comchatx.about` in Chinese. The plugins it needs are named in its `comchatx.builds`, and in its `dependencies` where those are plugins. The Plugins page's install brings them with it. `pi install -l` installs the one package it is given: a plugin npm brings as a dependency is not loaded, and loads only once it is installed by its own name.
+- A plugin whose record carries `comchatx.source` is a data source, switched on by its kind. Amazon's are switched on by the seller's own Amazon authorisation in its Settings on the Plugins page. One that bills the balance is switched on by the Plugins page's install or its switch, with nothing to connect in Settings; the seller's own key there is optional. Nothing in this shell connects or switches one.
 - Plugins of other authors are on the Plugins page, found by npm's `pi-package` keyword, and not on this list.
 
 A plugin comes onto the account in one of two ways:
@@ -19,6 +19,6 @@ A plugin comes onto the account in one of two ways:
 - the seller installs it on the Plugins page;
 - `pi install -l npm:<name>` runs from `/tenant`. It writes `/tenant/.pi/settings.json` and the package under `/tenant/.pi/npm`, which stay with the account. Without `-l` it is gone when the computer restarts.
 
-Either way, its tools and skills load before the seller's next message, in this same conversation, and not within the turn that installed it.
+Either way, its tools and skills load before the seller's next message, in this same conversation, and not within the turn that installed it. After `pi install -l`, a data source that bills the balance stays off: each call is refused until the seller turns it on in Plugins.
 
-A newer version reaches the account only when the seller presses Update on the plugin's page. Nothing updates a package on its own.
+A newer version reaches the account when the seller presses Update on the plugin's page, and a fresh install brings the newest. Nothing updates a package on its own.
