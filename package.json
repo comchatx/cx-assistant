@@ -1,6 +1,6 @@
 {
   "name": "@comchatx/cx-assistant",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Does the work with your plugins, giving reasons and sources.",
   "license": "MIT",
   "author": "ComChatX",
@@ -16,10 +16,14 @@
   "pi": {
     "extensions": [
       "./dist/extensions"
+    ],
+    "skills": [
+      "./skills"
     ]
   },
   "files": [
     "dist",
+    "skills",
     "README.zh-CN.md"
   ],
   "scripts": {
