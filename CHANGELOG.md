@@ -1,5 +1,6 @@
 # Changelog
 
+- 0.1.7: the card's name is the one signed on 2026-11-11, "How cx Works", in `comchatx.name`, the same on the Chinese and the English page; the skill `comchatx-plugins` says the seller knows a plugin by `comchatx.name`, the name its card prints.
 - 0.1.6: one skill, `comchatx-plugins`, which cx reads when a seller asks for something no tool or skill it has does: where ComChatX's plugins are listed and how one comes onto the seller's account. The system prompt's four sentences are unchanged.
 - 0.1.5: The card's line and the Overview, in English and Chinese, are the words signed on 2026-11-10: "Does the work with your plugins, giving reasons and sources." as npm's `description`, and 「用你装的插件把事做完，提建议时附上理由和出处。」 as `comchatx.about`. They said "Sets up cx as your assistant." and 「将 cx 设置为你的助手。」. What only a developer reads moved from the README to `DEVELOPING.md`: "What we expect of a plugin".
 - 0.1.4: the plugin's page shows its overview, in English and Chinese: who cx is and how this plugin sets how cx works, what a plugin gives cx, and what we expect of a plugin. The notes for developers move to `DEVELOPING.md`; the extension is unchanged.

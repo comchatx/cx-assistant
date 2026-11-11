@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { expect, it } from "vitest";
@@ -30,4 +30,9 @@ it("the build refuses a test under src/extensions/, which pi would load as an ex
   writeFileSync(join(root, "src", "extensions", "assistant.ts"), "export default () => {};\n");
   writeFileSync(join(root, "src", "extensions", "assistant.test.ts"), "export {};\n");
   expect(() => build(root)).toThrow("src/extensions/assistant.test.ts is not an extension; tests live under test/");
+});
+
+it("the card's name is comchatx.name, the one signed on 2026-11-11", () => {
+  const field = (JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")) as { comchatx: { name?: unknown } }).comchatx;
+  expect(field.name).toBe("How cx Works");
 });
