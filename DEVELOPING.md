@@ -16,9 +16,13 @@ The section names no tool, data source, supplier, command or marketplace: what c
 
 Why a section and not a skill: pi reads a skill's body only when it judges the skill relevant, so a new session could greet as a coding assistant before any skill was read. A section is in the prompt from the first message.
 
+## The skill
+
+Beside the extension, one skill, `comchatx-plugins` (`skills/comchatx-plugins/SKILL.md`), which pi reads when the model judges it relevant: where ComChatX's plugins are listed and what each says it does, read from npm at the time, and how one comes onto the account. It copies no plugin's name or line, so it stays true as plugins are published.
+
 ## What it needs
 
-Nothing but pi. It reaches no network, reads no file and holds no setting.
+Nothing but pi. The extension reaches no network, reads no file and holds no setting; the skill names npm's public addresses, which the model reads with its own shell.
 
 ## Install
 
