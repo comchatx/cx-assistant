@@ -1,6 +1,6 @@
 {
   "name": "@comchatx/cx-assistant",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Does the work with your plugins, giving reasons and sources.",
   "license": "MIT",
   "author": "ComChatX",
@@ -39,7 +39,12 @@
       "line": "document"
     },
     "section": "extensions",
-    "order": 90
+    "order": 90,
+    "skills": {
+      "comchatx-plugins": {
+        "zh": "告诉 cx 有哪些插件、各做什么、怎么安装。"
+      }
+    }
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*"

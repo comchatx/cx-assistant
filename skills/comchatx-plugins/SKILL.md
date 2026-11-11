@@ -1,6 +1,6 @@
 ---
 name: comchatx-plugins
-description: Where ComChatX's plugins are listed, what each one says it does, and how one comes onto the seller's account. Read when the seller asks for something no tool or skill here does.
+description: Where the plugins a seller can install are listed, what each one says it does, and how one comes onto the seller's account. Read when the seller asks for something no tool or skill here does.
 ---
 
 ComChatX's own packages are listed at `https://registry.npmjs.org/-/org/comchatx/package`, the list the Plugins page reads: a JSON object keyed by npm name.
