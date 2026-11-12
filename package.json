@@ -1,6 +1,6 @@
 {
   "name": "@comchatx/cx-assistant",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Does the work with your plugins, giving reasons and sources.",
   "license": "MIT",
   "author": "ComChatX",
@@ -33,6 +33,7 @@
     "test": "vitest run"
   },
   "comchatx": {
+    "name": "How cx Works",
     "about": "用你装的插件把事做完，提建议时附上理由和出处。",
     "mark": {
       "line": "document"

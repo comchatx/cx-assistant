@@ -30,3 +30,7 @@ it("the skill's body is at most 371 words and copies no plugin's name", () => {
   expect(text.match(/cx-[a-z0-9]/g) ?? []).toEqual([]);
   expect(text).toContain("https://registry.npmjs.org/-/org/comchatx/package");
 });
+
+it("names a plugin to the seller by the field the card prints, comchatx.name", () => {
+  expect(body()).toContain("The seller knows it by `comchatx.name`.");
+});
