@@ -33,6 +33,7 @@ it("the build refuses a test under src/extensions/, which pi would load as an ex
 });
 
 it("the card's name is comchatx.name, the one signed on 2026-11-11", () => {
-  const field = (JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")) as { comchatx: { name?: unknown } }).comchatx;
-  expect(field.name).toBe("How cx Works");
+  const field = (JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")) as { comchatx: { name?: unknown; nameZh?: unknown } }).comchatx;
+  expect(field.name).toBe("cx Core");
+  expect(field.nameZh).toBe("cx 基础功能");
 });
