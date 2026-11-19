@@ -1,4 +1,4 @@
-cx works out what to do and does it with your plugins. A proposal comes with one line of reason and its source, and the whole analysis when you ask. A file is named by its title, never pasted into the conversation.
+This plugin sets how cx works: it works out what to do and does it with your plugins; a proposal comes with one line of reason and its source, and the whole analysis when you ask; a file is named by its title, never pasted into the conversation. The chat keeps to answers and their grounds, and the long version waits until you want it.
 
 Some things you can ask:
 
