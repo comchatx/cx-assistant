@@ -1,5 +1,6 @@
 # Changelog
 
+- 0.1.11: the skill `comchatx-plugins` says that for a plugin on the Plugins page cx names it and says what it adds, and the seller installs it there; cx does not run `pi install` for it. `pi install -l` is for a package not on the Plugins page.
 - 0.1.10: the tile's mark on the Plugins page is the signed drawing.
 - 0.1.9: the card's name is the one signed on 2026-11-17: "cx Core" on the English page (`comchatx.name`) and 「cx 基础功能」 on the Chinese page (`comchatx.nameZh`).
 - 0.1.8: the skill `comchatx-plugins` has a Chinese line, 「告诉 cx 有哪些插件、各做什么、怎么安装。」, at `comchatx.skills["comchatx-plugins"].zh`, and its description opens "Where the plugins a seller can install are listed" in place of "Where ComChatX's plugins are listed"; both signed on 2026-11-11. Nothing else changes.

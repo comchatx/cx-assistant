@@ -1,6 +1,6 @@
 {
   "name": "@comchatx/cx-assistant",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Does the work with your plugins, giving reasons and sources.",
   "license": "MIT",
   "author": "ComChatX",
