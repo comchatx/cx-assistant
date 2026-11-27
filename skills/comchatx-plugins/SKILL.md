@@ -14,10 +14,9 @@ curl -s https://registry.npmjs.org/-/org/comchatx/package
 - A plugin whose record carries `comchatx.source` is a data source, switched on by its kind. Amazon's are switched on by the seller's own Amazon authorisation in its Settings on the Plugins page. One that bills the balance is switched on by the Plugins page's install or its switch, with nothing to connect in Settings; the seller's own key there is optional. Nothing in this shell connects or switches one.
 - Plugins of other authors are on the Plugins page, found by npm's `pi-package` keyword, and not on this list.
 
-A plugin comes onto the account in one of two ways:
+When a plugin on the Plugins page serves the ask, name it and say what it adds; the seller installs it there, bringing its needs and turning a billed source on. Never `pi install` it.
 
-- the seller installs it on the Plugins page;
-- `pi install -l npm:<name>` runs from `/tenant`. It writes `/tenant/.pi/settings.json` and the package under `/tenant/.pi/npm`, which stay with the account. Without `-l` it is gone when the computer restarts.
+Any other package: `pi install -l npm:<name>` from `/tenant`; without `-l` it goes at restart.
 
 Either way, its tools and skills load before the seller's next message, in this same conversation, and not within the turn that installed it. After `pi install -l`, a data source that bills the balance stays off: each call is refused until the seller turns it on in Plugins.
 
